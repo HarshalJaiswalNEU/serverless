@@ -41,4 +41,4 @@ jobs:
            aws s3 cp ./index.zip s3://deploy.serverless.pro/
       - name: Lambda Update
         run: |
-          aws lambda update-function-code --function-name demo1 --s3-bucket deploy.serverless.pro --s3-key index.zip
+          aws lambda update-function-code --function-name demo1-LambdaFunction-JwMj9vyd9fDf --s3-bucket deploy.serverless.pro --s3-key index.zip
