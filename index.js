@@ -4,6 +4,7 @@ var ses = new aws.SES({ region: "us-east-1" });
 var docClient = new aws.DynamoDB.DocumentClient();
 
 exports.handler = async function (event) {
+  //handler pro
     let message = event.Records[0].Sns.Message
     let json = JSON.parse(message);
     let email = json.username;
