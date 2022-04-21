@@ -13,7 +13,7 @@ exports.handler = async function (event) {
     const expirationTime = secondsInEpoch + seconds;
     const currentTime = Math.round(Date.now() / 1000);
 
-    //Creating a table for DynamoDB
+    //Creating a table for DynamoDB 
 var table = {
     TableName : "csye6225",
     Item:{
@@ -44,8 +44,8 @@ const mailbody = `
       <p>Please verify your email</br>
       <b>Link will be valid only for 5 minutes!</b></br>
       Find your link below:</p>
-      <p><a href=http://demo.harshaljaiswal.me/v1/user/verifyUserEmail?token=${token}&email=${email} >
-        http://demo.harshaljaiswal.me/v1/user/verifyUserEmail?token=${token}&email=${email} </a> </p>
+      <p><a href=https://demo.harshaljaiswal.me/v1/user/verifyUserEmail?token=${token}&email=${email} >
+        https://demo.harshaljaiswal.me/v1/user/verifyUserEmail?token=${token}&email=${email} </a> </p>
         </body></html>
     </body>
 </html>`;
