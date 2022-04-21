@@ -13,7 +13,7 @@ exports.handler = async function (event) {
     const expirationTime = secondsInEpoch + seconds;
     const currentTime = Math.round(Date.now() / 1000);
 
-    //Creating a table for DynamoDB
+    //Creating a table for DynamoDB 
 var table = {
     TableName : "csye6225",
     Item:{
